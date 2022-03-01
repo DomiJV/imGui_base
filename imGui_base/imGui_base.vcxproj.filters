@@ -2,15 +2,6 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="src\main.cpp" />
-    <ClCompile Include="libs\backends\imgui_impl_glfw.cpp">
-      <Filter>libs\backends</Filter>
-    </ClCompile>
-    <ClCompile Include="libs\backends\imgui_impl_opengl3.cpp">
-      <Filter>libs\backends</Filter>
-    </ClCompile>
-    <ClCompile Include="libs\gl3w\GL\gl3w.c">
-      <Filter>libs\gl3w</Filter>
-    </ClCompile>
     <ClCompile Include="libs\imgui\imgui.cpp">
       <Filter>libs\imgui</Filter>
     </ClCompile>
@@ -35,20 +26,14 @@
     <ClCompile Include="libs\implot\implot_items.cpp">
       <Filter>libs\implot</Filter>
     </ClCompile>
+    <ClCompile Include="libs\backends\imgui_impl_win32.cpp">
+      <Filter>libs\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="libs\backends\imgui_impl_dx11.cpp">
+      <Filter>libs\backends</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="libs\backends\imgui_impl_glfw.h">
-      <Filter>libs\backends</Filter>
-    </ClInclude>
-    <ClInclude Include="libs\backends\imgui_impl_opengl3.h">
-      <Filter>libs\backends</Filter>
-    </ClInclude>
-    <ClInclude Include="libs\gl3w\GL\gl3w.h">
-      <Filter>libs\gl3w</Filter>
-    </ClInclude>
-    <ClInclude Include="libs\gl3w\GL\glcorearb.h">
-      <Filter>libs\gl3w</Filter>
-    </ClInclude>
     <ClInclude Include="libs\imgui\imconfig.h">
       <Filter>libs\imgui</Filter>
     </ClInclude>
@@ -73,6 +58,12 @@
     <ClInclude Include="libs\implot\implot_internal.h">
       <Filter>libs\implot</Filter>
     </ClInclude>
+    <ClInclude Include="libs\backends\imgui_impl_dx11.h">
+      <Filter>libs\backends</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\backends\imgui_impl_win32.h">
+      <Filter>libs\backends</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\README.txt" />
@@ -89,9 +80,6 @@
     </Filter>
     <Filter Include="libs\backends">
       <UniqueIdentifier>{17588772-525f-4be6-ae87-e9efef4651fb}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="libs\gl3w">
-      <UniqueIdentifier>{34968fb1-5eb1-47e8-bc9c-e54f2593988c}</UniqueIdentifier>
     </Filter>
     <Filter Include="libs\imgui">
       <UniqueIdentifier>{176f2fe8-bc7d-4847-8d3d-468a244663e8}</UniqueIdentifier>
