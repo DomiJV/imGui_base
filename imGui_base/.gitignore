@@ -9,7 +9,7 @@ imgui.ini
 *.obj
 *.exe
 
-*Debug/*
+*build/*
 *Release/*
 *x64/*
 
